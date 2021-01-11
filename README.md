@@ -1,6 +1,5 @@
-# Vue CLI in a Rails app
-
-Template for building applications with both Vue CLI and Rails in the same repo (without Webpacker)
+# To-Do App made with Rails and Vue
+Simple To-Do app made with Vue CLI and Rails in the same repo (without Webpacker).
 
 ## Versions
 
