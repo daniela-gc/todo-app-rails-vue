@@ -13,5 +13,11 @@ module.exports = {
   indexPath:
     process.env.NODE_ENV === "production"
       ? "../app/views/application.html.erb"
-      : "index.html"
+      : "index.html",
+  pages: {
+    index: {
+      entry: 'src/main.js',
+      title: 'To-Do List'
+    }
+  }
 };

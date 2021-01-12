@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_12_30_200522) do
     t.string "description", null: false
     t.datetime "scheduled_date"
     t.integer "category"
+    t.boolean "checked", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["description"], name: "index_task_items_on_description"

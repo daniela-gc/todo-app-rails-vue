@@ -3,7 +3,7 @@ class Api::V1::TaskItemsController < Api::V1::BaseController
 
   # GET /task_items
   def index
-    task_items = TaskItem.all
+    task_items = TaskItem.order(:checked, created_at: :desc)
 
     render json: TaskItemSerializer.new(task_items)
   end
@@ -54,9 +54,11 @@ class Api::V1::TaskItemsController < Api::V1::BaseController
       params
       .fetch(:task_item, {})
       .permit(
+        :id,
         :description,
         :scheduled_date,
-        :category
+        :category,
+        :checked
       )
     end
 end

@@ -4,6 +4,7 @@ class CreateTaskItems < ActiveRecord::Migration[6.1]
       t.string :description, null: false, index: true
       t.datetime :scheduled_date, index: true
       t.integer :category
+      t.boolean :checked, default: false, index: true
 
       t.timestamps
     end

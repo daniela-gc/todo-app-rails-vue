@@ -1,5 +1,5 @@
 <template>
-  <div class="js-tasks">
+  <div class="m-4 md:m-10">
   <router-view />
   </div>
 </template>
