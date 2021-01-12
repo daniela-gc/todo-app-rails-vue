@@ -16,8 +16,17 @@ module.exports = {
       : "index.html",
   pages: {
     index: {
-      entry: 'src/main.js',
-      title: 'To-Do List'
+      entry: "src/main.js",
+      title: "To-Do List"
+    }
+  },
+  pwa: {
+    name: 'To-Do List',
+    themeColor: "#F1B14E",
+    msTileColor: "#F1B14E",
+    appleMobileWebAppCache: "yes",
+    manifestOptions: {
+      background_color: "#F1B14E"
     }
   }
 };

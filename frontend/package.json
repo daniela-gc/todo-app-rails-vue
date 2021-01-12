@@ -1,8 +1,8 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "author": "Daniela Guarecuco",
   "private": true,
+  "author": "Daniela Guarecuco",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean",
@@ -15,6 +15,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "postcss": "^7",
+    "register-service-worker": "^1.7.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "v-tooltip": "https://github.com/paulshen/v-tooltip.git#vue3",
     "vue": "^3.0.0",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",

@@ -3,8 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import "./main.css";
 import VTooltip from "v-tooltip";
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+import axios from "axios";
+import VueAxios from "vue-axios";
+import "./registerServiceWorker";
 
 createApp(App)
   .use(router)
